@@ -1,22 +1,636 @@
-.App {
-  text-align: center;
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+    font-family: "Roboto", sans-serif;
+    color: #3f3d56;
+    animation: 1s ease-out 0s 1 appearAnimation;
+    background-color: #f3f3f7!important;
+}
+.container-fluid {
+    padding: 0px!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar1 {
+    height: 80px!important;
+    box-shadow: 0 10px 10px -10px grey!important;
+    animation: 0.5s ease-out 0s 1 slideDown;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.navbar2 {
+    height: 120px;
+    margin-bottom: -120px;
+    animation: 0.5s ease-in-out 0s 1 appearAnimation
 }
+
+.navbar2 .nav-link {
+    color:white!important;
+}
+
+.navbar2 .search-icon {
+    color:white!important;
+}
+.navbar2 button{
+    color:white!important;
+}
+
+
+
+.navbar .navbar-brand {
+    padding-bottom: 10px
+}
+
+
+.navbar button{
+    border: none;
+}
+
+.nav-item .nav-link{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height:25px;
+    font-weight: 700;
+}
+
+
+
+.nav-item .nav-link:hover {
+    color:#eb4c5c!important;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:not( :hover ){
+    transition: 0.3s ease-in-out;
+}
+
+.search-icon {
+    padding-top: 8px;
+    margin-left: 20px;
+    color: #7d7d7e;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.first-block {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    background: #5f586f url('./asset/materials/slide-bg.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0px;
+    min-height: 100vh;
+}
+
+.first-block .first-block__text {
+    font-size: 5.081vw;
+    line-height: 100%!important;
+    font-weight: 700!important;
+    color: #ffffff;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-bottom: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 3.849vw;
+    text-align: center;
+    z-index: -1!important;
+    animation: 1.5s ease-in-out 0s 1 appearAnimation
+
+}
+
+.S-text {
+    color: #ff414a!important;
+    font-family: "PhilosopherItalic"!important;
+    font-weight:400 !important;
+}
+
+.second-block {
+    margin-top: -22% !important;
+    padding-top: 80px !important;
+    padding-bottom: 95px !important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    background-color: #ffffff !important;
+    margin-left: 8%;
+    margin-right:8%;
+    box-shadow: 0 10px 10px -10px grey;
+    position:relative;
+}
+
+.second-block .second-block__item {
+    padding: 0px 15px 0px 15px;
+}
+
+.badge {
+    height: 44px;
+    width: 137.7px;
+    border:none;
+}
+
+ .badge:hover {
+    background-color: #eb4c5c;
+}
+
+.second-block .column-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3f3d56;
+    text-align: left;
+}
+
+.second-block .column-text {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 40px;
+    margin-top:20px;
+}
+
+.fourth-block {
+    margin-top:-210px;
+    padding-bottom:150px;
+    text-align: center;
+    background-color: #f3f3f7 url(./asset/materials/Group-19-copy.png) !important;
+    background-image: url(./asset/materials/Group-19-copy.png) !important;
+    background-position-x: 0px !important;
+    background-position-y: 0px !important;
+    background-size: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    background-color: rgb(243, 243, 247) !important;
+    background-position: 0 0 !important;
+    background-position-x: 0px !important;
+    background-position-y: 0px !important;
+    background-repeat: no-repeat !important;
+}
+
+.fourth-block .fourth-block__banner {
+    padding-top:330px;
+    margin-bottom: 50px;
+}
+
+.fourth-block h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #3f3d56;
+}
+    
+.fourth-block p {
+    font-size: 16px;
+    margin: 15px 0px 15px 0px;
+    color: #3f3d56;
+}
+
+.fourth-block .fourth-block__banner span {
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    color: #3f3d56;
+}
+
+.fourth-block .offer-row {
+    box-sizing: border-box;
+    margin-left: 32.5px;
+    margin-right: 32.5px;
+    margin-top:40px;
+}
+
+.fourth-block .offer-block {
+    background-color:white;
+    padding:40px;
+    text-align:left;    
+}
+
+.fourth-block .offer-block .arrow-icon{
+    color:red;
+    -webkit-text-stroke: 1px white;
+    font-size: 50px;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+.fourth-block .offer-block .arrow-icon:hover {
+    color: #e46b77;
+    cursor:hand;
+    cursor:pointer;
+}
+
+.fifth-block {
+    padding:100px;
+}
+.fifth-block img{
+    width:100%;
+}
+
+.fifth-block__header-small {
+    font-size: 30px;
+    font-weight: 700!important;
+    color: #3f3d56;
+}
+
+.fifth-block__header-big {
+    font-style: italic;
+    font-family: "PhilosopherBold";
+    font-size: 40px;
+    font-weight: 700!important;
+    color: #7f7bae;
+}
+
+.tags-column  {
+    padding: 0px 15px 0px 15px;
+}
+
+.tags-column-inner {
+    padding-right: 50px;
+}
+
+.tags-column-inner .iconbox-icon {
+    color:#3f3d56;
+    float:left;
+    transition: ease-in-out;
+}
+
+.tags-column-inner .iconbox:hover {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+    transition: all .3s ease-in-out;
+}
+
+.tags-column-inner .iconbox:not( :hover ) {
+    transition: all .3s ease-in-out;
+}
+
+.tags-column-inner .iconbox-search-icon {
+    -webkit-text-stroke: 4px white;
+}
+
+.iconbox-aside {
+    padding-left:40px;
+    box-sizing: border-box;
+    text-align:left;
+    display:flex;
+    flex-direction: column;
+}
+
+.iconbox-title {
+    word-wrap: break-word;
+}
+
+.iconbox-title h3 {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: 1000;
+    -webkit-text-stroke: 0.5px white;
+    font-size: 20px;
+}
+
+.iconbox-content {
+    word-wrap: break-word;
+    font-family: "Roboto", sans-serif;
+    color: #898989;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.divider {
+    margin: 30px 0px 30px 66px!important;
+}
+
+.divider .divider-line {
+    border-top-width: 2px;
+    border-top-color: #f4f4f4;
+    border-top-style: solid;
+    margin: 0 auto;
+}
+
+/* .row-left {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.row-right {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+} */
+
+.sith-block {
+    padding-top: 90px;
+    padding-bottom: 140px !important;
+    background: #3a354a url("./asset/materials/susbscribe-bg.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align:center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.sith-block .sub-header {
+    font-weight: 700;
+}
+.sith-block .sub-input {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+
+.sith-block .sub-input .input-field {
+    height: 50px;
+    border-radius: 25px;
+    background-color: #626075!important;
+    display: inline-block;
+    width: 75%;
+}
+
+.sith-block .sub-input .badge {
+    height: 50px;
+    border:none;
+    display:inline-block;
+    margin-left: -50px;
+    position: absolute;
+    width: 110px;
+}
+.sith-block .sub-input .badge:hover {
+    background-color: #ff414a!important;
+}
+
+.seventh-block {
+    margin: 0px -15px 0px -15px;
+    padding:100px;
+    background-color: white;
+}
+
+.seventh-block .seventh-block__header {
+    text-align:center;
+}
+
+.seventh-block .seventh-block__header h1{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #3f3d56;
+    font-size:40px;
+}
+
+.seventh-block .seventh-block__header span{
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #3f3d56;
+    font-size:16px;
+    font-style: italic;
+}
+
+.client-list {
+    margin-top:30px;
+}
+
+.client-list .client-block {
+    padding-top: 30px;
+}
+
+.client-list .client-block small {
+    font-size: 14px;
+    color: #707070;
+    margin: 0px 0px 15px 0px;
+    font-style: italic;
+}
+
+.client-name {
+    font-family: "Roboto", sans-serif;
+    color: #3f3d56;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.client-block-text {
+    font-size: 16px;
+    color: #707070;
+    margin: 0px 0px 15px 0px;
+}
+
+.client-logo {
+    padding-top:100px;
+    justify-content: space-between;
+}
+
+.logo-item {
+    padding: 0px 15px 0px 15px;
+    flex: 1 1 0;
+    width: 0;
+}
+.logo-item a img{
+    min-width: 1px;
+    max-width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+.seventh-block .seventh-block__contact-us {
+    padding-top: 70px 
+}
+
+
+.contact-us__text h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700!important;
+    color: #3f3d56;
+    font-size: 36px!important;
+}
+
+.contact-us__text .S-text {
+    font-family: "PhilosopherBoldItalic"!important;
+}
+
+.seventh-block .seventh-block__contact-us  .badge {
+    margin-top:15%!important;
+}
+
+.footer {
+    padding-top:100px;
+    background-color:#3f3d55;
+    font-family:"Roboto", sans-serif;
+    color: #a297b3;
+    font-size: 15px;
+    margin: 0px 0px 15px 0px
+}
+
+.footer ul li{
+    list-style: none;   
+}
+
+.footer ul li span{
+    padding-right:20px;
+    white-space: nowrap;
+}
+.footer ul li a{
+    color: #a297b3;
+    font-size: 15px;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+.footer a:hover{
+    color:#eb4c5c;
+    transition: 0.3s ease-in-out;
+}
+
+.footer a:not( :hover ){
+    transition: 0.3s ease-in-out;
+}
+
+.footer-container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footer-container div {
+    padding: 0px 15px 0px 15px;
+    flex: 1 1 0;
+}
+
+
+.footer-container ul {
+    margin-top:25px;
+    padding-left: 0px!important;
+}
+
+.footer-container h3 {
+    font-weight: 600!important;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-container .footer-logo-img {
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.footer .copy-right {
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align:center;
+    font-size: 12px;
+    font-weight: 400!important;
+    color: #9895b3;
+}
+
+.msgBox__block {
+    margin: 2em .5em 1em;
+    border-width: 0;
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+    animation:  .5s ease-in-out slideDown;
+}
+
+.msgBox__block p {
+    margin-bottom: 0px!important;
+}
+
+.msgBox .msgBox--success {
+    background-color: #dff4e5!important;
+    color: #36bd5f;
+}
+
+.msgBox .msgBox--error {
+    background-color: #f4f4f4!important;
+    color: #8d8d8d;
+}
+
+.form-control{
+    color:white!important;
+}
+
+.form-control::-webkit-input-placeholder { color: white!important; }  
+.form-control:-moz-placeholder { color: white!important; }  
+.form-control::-moz-placeholder { color: white!important; }  
+.form-control:-ms-input-placeholder { color: white!important; } 
+.form-control::-ms-input-placeholder { color: white!important; }  
+
+@media (min-width: 1250px) {
+.third-block {
+        margin-left: calc(-100vw/2 + 1200px/2 + 7.5px);
+        margin-right: calc(-100vw/2 + 1200px/2 + 7.5px);
+        padding-left: calc(100vw/2 - 1200px/2 - 7.5px)!important;
+        padding-right: calc(100vw/2 - 1200px/2 - 7.5px)!important;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .footer-container div {
+        flex: 50%;
+        max-width:50%;
+        margin: 15px 0px 15px 0px;
+    }
+    .footer-container ul {
+        margin-top:20px;
+    }
+    
+}
+
+@font-face {
+    font-family: "PhilosopherBold";
+    src: url('./asset/fonts/Philosopher-Bold.ttf')
+}
+
+@font-face {
+    font-family: "PhilosopherItalic";
+    src: url('./asset/fonts/Philosopher-Italic.ttf')
+}
+@font-face {
+    font-family: "PhilosopherBoldItalic";
+    src: url('./asset/fonts/Philosopher-BoldItalic.ttf')
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+  
+
+  
