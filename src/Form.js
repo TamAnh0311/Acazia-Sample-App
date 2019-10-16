@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './navbar-toggle.scss';
 
 class Form extends React.Component {
     constructor(props) {
@@ -17,9 +18,9 @@ class Form extends React.Component {
         this.setState({ email: event.target.value });
     }
 
-    componentDidMount() {
-        this.handleSubmit(this.state.email);
-    }
+    // componentDidMount() {
+    //     this.handleSubmit(this.state.email);
+    // }
 
     handleSubmit(email) {
         console.log('trigered')
@@ -40,8 +41,7 @@ class Form extends React.Component {
     }
 
 
-    handleMsg(props) {
-        console.log("msg triggered")
+    handleMsg() {
         const isDisplay = this.props.isDisplay
         const isSuccess = this.props.isSuccess
         if (isDisplay){
